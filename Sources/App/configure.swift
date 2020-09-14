@@ -5,10 +5,10 @@ import Vapor
 public func configure(_ app: Application) throws {
    
     app.databases.use(.postgres(
-        hostname: "lallah.db.elephantsql.com",
-        username: "xwlenakf",
-        password: "xwdz-hXD9xrnyh4XrETAtbFAR5HJCptK",
-        database: "xwlenakf"
+        hostname: "localhost",
+        username: "luanachen",
+        password: "",
+        database: "movieListToCheck"
     ), as: .psql)
 
     app.migrations.add(CreateMovie())
