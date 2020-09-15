@@ -44,5 +44,5 @@ This API written in swift is currently deployed to Heroku postgres database, you
         "id": "BCB41C39-BE91-41B3-8A3F-E25565875448",
         "title": "Best movie ever",
         "body": "This movie is just so deep and memorable"
-}
+        }
 
