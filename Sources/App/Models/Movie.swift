@@ -10,17 +10,13 @@ final class Movie: Model, Content {
     @Field(key: "title")
     var title: String
     
-    @Field(key: "poster")
-    var poster: String
-    
     @Children(for: \.$movie)
     var reviews: [Review]
 
     init() { }
 
-    init(id: UUID? = nil, title: String, poster: String) {
+    init(id: UUID? = nil, title: String) {
         self.id = id
         self.title = title
-        self.poster = poster
     }
 }
