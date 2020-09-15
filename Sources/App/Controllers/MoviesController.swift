@@ -16,7 +16,9 @@ final class MoviesController {
     }
     
     func all(_ req: Request) throws -> EventLoopFuture<[Movie]> {
-        Movie.query(on: req.db).all()
+        Movie.query(on: req.db)
+            .with(\.$reviews)
+            .all()
     }
     
     func delete(_ req: Request) throws -> EventLoopFuture<HTTPStatus> {
